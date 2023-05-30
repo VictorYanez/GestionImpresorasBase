@@ -1,0 +1,33 @@
+﻿@using GestionImpresoras.Models;
+@model Area
+
+@{
+    ViewData["Title"] = "Borrar Area";
+}
+<h1>Borrar Área</h1>
+<h3>¿Estás seguro de que deseas borrar esta Área?</h3>
+<h1>Borrar Área @Model.Nombre</h1>
+<hr />
+
+<form asp-controller="Areas" asp-action="Borrar" method="post">
+
+    <!-- Recibo el id que se envía desde la vista -->
+    <input type="hidden" asp-for="Id" value="@Model.Id" class="Area" />
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="Nombre" class="form-label">Nombre</label>
+        <input type="text" asp-for="Nombre" class="form-control" readonly />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Descripcion" class="form-label">Descripcion</label>
+        <input type="text" asp-for="Descripcion" class="form-control" readonly />
+        <span asp-validation-for="Descripcion" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary"><i class="bi bi-send-plus"></i> Enviar</button>
+    <a class="btn btn-secondary" asp-action="Index"><i class="bi bi-stop-circle"> Cancelar</i></a>
+
+</form>

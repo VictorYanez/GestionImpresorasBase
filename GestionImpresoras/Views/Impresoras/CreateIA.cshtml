@@ -1,0 +1,64 @@
+﻿
+@*
+@page
+*@
+@using GestionImpresoras.Models
+@model Impresora 
+
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Impresora</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CodigoActivoFijo" class="control-label"></label>
+                <input asp-for="CodigoActivoFijo" class="form-control" />
+                <span asp-validation-for="CodigoActivoFijo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MarcaId" class="control-label"></label>
+                <select asp-for="MarcaId" class ="form-control">
+                     @*   asp-items="@Model.Marca">    *@
+                    <option value="">--Select Marca--</option>
+                </select>
+            </div>
+            <div id="modelos">
+                @await Html.PartialAsync("_ModelosPartial", Model)
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadoId" class="control-label"></label>
+                <select asp-for="EstadoId" class ="form-control">
+                   @*     asp-items="@Model.Estados">   *@
+                    <option value="">--Select Estado--</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="DireccionIP" class="control-label"></label>
+                <input asp-for="DireccionIP" class="form-control" />
+                <span asp-validation-for="DireccionIP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="/js/cascadingdropdown.js"></script> 
+     }
+}
+

@@ -1,0 +1,35 @@
+Claro, aquí tienes un ejemplo de cómo podrías utilizar la instrucción `ALTER TABLE` para agregar restricciones de clave foránea a la tabla `Impresora` y crear relaciones con las tablas `Marca`, `Modelo`, `Estado` e `Institucion`:
+
+```sql
+ALTER TABLE Impresora
+ADD CONSTRAINT FK_Impresora_Marca_MarcaId
+FOREIGN KEY (MarcaId)
+REFERENCES Marca(Id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION;
+
+ALTER TABLE Impresora
+ADD CONSTRAINT FK_Impresora_Modelo_ModeloId
+FOREIGN KEY (ModeloId)
+REFERENCES Modelo(Id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION;
+
+ALTER TABLE Impresora
+ADD CONSTRAINT FK_Impresora_Estado_EstadoId
+FOREIGN KEY (EstadoId)
+REFERENCES Estado(Id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION;
+
+ALTER TABLE Impresora
+ADD CONSTRAINT FK_Impresora_Institucion_InstitucionId
+FOREIGN KEY (InstitucionId)
+REFERENCES Institucion(Id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION;
+```
+
+En este ejemplo, se están creando cuatro restricciones de clave foránea para vincular la tabla `Impresora` con las tablas `Marca`, `Modelo`, `Estado` e `Institucion`. Se especifica explícitamente que no se deben realizar acciones en cascada al eliminar o actualizar una fila de las tablas relacionadas.
+
+Puedes modificar este código según tus necesidades para agregar más restricciones de clave foránea o cambiar el comportamiento en cascada de las claves foráneas existentes. ¿Hay algo más en lo que pueda ayudarte? 😊

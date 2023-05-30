@@ -1,0 +1,208 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GestionImpresoras
+build_property.RootNamespace = GestionImpresoras
+build_property.ProjectDir = C:\Users\victor.yanez\source\repos\GestionImpresoras\GestionImpresoras\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\victor.yanez\source\repos\GestionImpresoras\GestionImpresoras
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Areas/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJlYXNcQm9ycmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Areas/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJlYXNcQ3JlYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Areas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJlYXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Areas/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJlYXNcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Areas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJlYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Estados/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xCb3JyYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Estados/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xDcmVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Estados/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Estados/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Estados/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Home/NoEncontrado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb0VuY29udHJhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Impresoras/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzb3Jhc1xCb3JyYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Impresoras/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzb3Jhc1xDcmVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Impresoras/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzb3Jhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Impresoras/CreateIA.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzb3Jhc1xDcmVhdGVJQS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Impresoras/Creater.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzb3Jhc1xDcmVhdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Impresoras/Creater0.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzb3Jhc1xDcmVhdGVyMC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Impresoras/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzb3Jhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Impresoras/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzb3Jhc1xFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Impresoras/EditarTemp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzb3Jhc1xFZGl0YXJUZW1wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Impresoras/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzb3Jhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Instituciones/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dWNpb25lc1xCb3JyYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Instituciones/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dWNpb25lc1xDcmVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Instituciones/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dWNpb25lc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Instituciones/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dWNpb25lc1xFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Instituciones/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dWNpb25lc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Marcas/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXEJvcnJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Marcas/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Marcas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Marcas/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Marcas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Modelos/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvc1xCb3JyYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Modelos/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvc1xDcmVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Modelos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Modelos/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvc1xFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Modelos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Unidades/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pZGFkZXNcQm9ycmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Unidades/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pZGFkZXNcQ3JlYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Unidades/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pZGFkZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Unidades/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pZGFkZXNcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Unidades/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pZGFkZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.yanez/source/repos/GestionImpresoras/GestionImpresoras/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4u9xdf2npp

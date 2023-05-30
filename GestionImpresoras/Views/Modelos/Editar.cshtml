@@ -1,0 +1,46 @@
+﻿@using GestionImpresoras.Models;
+@model Modelo
+@{
+    ViewData["Title"] = "Editar Modelos de Impresoras";
+}
+<h1>Editar Modelos</h1>
+<h3>@Model.Nombre</h3>
+<hr />
+<form asp-action="Editar" asp-controller="Modelos" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="mb-3 form-group">
+        <label asp-for="MarcaId" class="form-label">Marca</label>
+        <select asp-for="MarcaId" class="form-select form-select sm" asp-items="ViewBag.MarcaId"></select>
+        <span asp-validation-for="MarcaId" class="text-danger"></span>
+    </div>
+    <!---------------  Campos texto de la clase Modelo   ------------->
+    <div class="mb-3">
+        <label asp-for="Nombre" class="form-label">Nombre</label>
+        <input type="text" asp-for="Nombre" class="form-control" placeholder="Ingresa el nombre del Modelo" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Descripcion" class="form-label">Descripcion</label>
+        <input type="text" asp-for="Descripcion" class="form-control" placeholder="Ingresa la descripción del Modelo" />
+        <span asp-validation-for="Descripcion" class="text-danger"></span>
+    </div>
+    <!---------------  Botones summit y cancelar  ------------->
+    <button type="submit" class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Enviar</button>
+    <a class="btn btn-secondary" asp-action="Index"><i class="bi bi-backspace"></i> Cancelar</a>
+
+</form>
+@*
+<!--- Para Lista de Marca   -->
+<div class="mb-3 form-group">
+    <label asp-for="MarcaId" class="form-label">Marca</label>
+    <select class="form-select form-select sm" asp-for="MarcaId" asp-items="ViewBag.MarcaId">
+        @foreach (var item in ViewBag.MarcaId)
+        {
+            <option value="@item.Value" selected="@item.Selected">@item.Text</option>
+        }
+    </select>
+    <span asp-validation-for="MarcaId" class="text-danger"></span>
+</div>
+*@

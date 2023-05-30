@@ -1,0 +1,199 @@
+WhenMarcaChanged
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+// Controlador
+public class ImpresoraController : Controller
+{
+    private readonly ApplicationDbContext _context;
+
+    public ImpresoraController(ApplicationDbContext context)
+    {
+        _context = context;
+    }
+
+    // Acción para obtener las marcas
+    public JsonResult GetMarcas()
+    {
+        var marcas = _context.Marcas.ToList();
+        return Json(new SelectList(marcas, "Id", "Nombre"));
+    }
+
+    // Acción para obtener los modelos por marca
+    public JsonResult GetModelos(int marcaId)
+    {
+        var modelos = _context.Modelos.Where(m => m.MarcaId == marcaId).ToList();
+        return Json(new SelectList(modelos, "Id", "Nombre"));
+    }
+
+    // Acción para obtener las impresoras por modelo
+    public JsonResult GetImpresoras(int modeloId)
+    {
+        var impresoras = _context.Impresoras.Where(i => i.ModeloId == modeloId).ToList();
+        return Json(new SelectList(impresoras, "Id", "Nombre"));
+    }
+}
+
+// Vista
+@{
+    ViewData["Title"] = "Impresoras";
+}
+
+<h1>Impresoras</h1>
+
+<div>
+    <label>Marca:</label>
+    <select id="marca"></select>
+</div>
+<div>
+    <label>Modelo:</label>
+    <select id="modelo"></select>
+</div>
+<div>
+    <label>Impresora:</label>
+    <select id="impresora"></select>
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Obtener las marcas al cargar la página
+            $.getJSON("/Impresora/GetMarcas", function (data) {
+                var items = "<option>Selecciona una marca</option>";
+                $.each(data, function (i, marca) {
+                    items += "<option value='" + marca.value + "'>" + marca.text + "</option>";
+                });
+                $("#marca").html(items);
+            });
+
+            // Obtener los modelos al seleccionar una marca
+            $("#marca").change(function () {
+                $.getJSON("/Impresora/GetModelos/" + $("#marca").val(), function (data) {
+                    var items = "<option>Selecciona un modelo</option>";
+                    $.each(data, function (i, modelo) {
+                        items += "<option value='" + modelo.value + "'>" + modelo.text + "</option>";
+                    });
+                    $("#modelo").html(items);
+                });
+            });
+
+            // Obtener las impresoras al seleccionar un modelo
+            $("#modelo").change(function () {
+                $.getJSON("/Impresora/GetImpresoras/" + $("#modelo").val(), function (data) {
+                    var items = "<option>Selecciona una impresora</option>";
+                    $.each(data, function (i, impresora) {
+                        items += "<option value='" + impresora.value + "'>" + impresora.text + "</option>";
+                    });
+                    $("#impresora").html(items);
+                });
+            });
+        });
+    </script>
+}
+
+
+--------------------------------------------------------
+
+// Controlador
+public class ImpresoraController : Controller
+{
+    private readonly ApplicationDbContext _context;
+
+    public ImpresoraController(ApplicationDbContext context)
+    {
+        _context = context;
+    }
+
+    // Acción para obtener las marcas
+    public IActionResult GetMarcas()
+    {
+        var marcas = _context.Marcas.ToList();
+        return PartialView("_MarcasPartial", marcas);
+    }
+
+    // Acción para obtener los modelos por marca
+    public IActionResult GetModelos(int marcaId)
+    {
+        var modelos = _context.Modelos.Where(m => m.MarcaId == marcaId).ToList();
+        return PartialView("_ModelosPartial", modelos);
+    }
+
+    // Acción para obtener las impresoras por modelo
+    public IActionResult GetImpresoras(int modeloId)
+    {
+        var impresoras = _context.Impresoras.Where(i => i.ModeloId == modeloId).ToList();
+        return PartialView("_ImpresorasPartial", impresoras);
+    }
+}
+
+// Vista
+@{
+    ViewData["Title"] = "Impresoras";
+}
+
+<h1>Impresoras</h1>
+
+<div>
+    <label>Marca:</label>
+    @{ Html.RenderAction("GetMarcas", "Impresora"); }
+</div>
+<div>
+    <label>Modelo:</label>
+    <div id="modelos"></div>
+</div>
+<div>
+    <label>Impresora:</label>
+    <div id="impresoras"></div>
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Obtener los modelos al seleccionar una marca
+            $("#marca").change(function () {
+                $("#modelos").load("/Impresora/GetModelos/" + $("#marca").val());
+            });
+
+            // Obtener las impresoras al seleccionar un modelo
+            $("#modelo").change(function () {
+                $("#impresoras").load("/Impresora/GetImpresoras/" + $("#modelo").val());
+            });
+        });
+    </script>
+}
+
+// Vista parcial para las marcas
+@model IEnumerable<Marca>
+
+<select id="marca">
+    <option>Selecciona una marca</option>
+    @foreach (var marca in Model)
+    {
+        <option value="@marca.Id">@marca.Nombre</option>
+    }
+</select>
+
+// Vista parcial para los modelos
+@model IEnumerable<Modelo>
+
+<select id="modelo">
+    <option>Selecciona un modelo</option>
+    @foreach (var modelo in Model)
+    {
+        <option value="@modelo.Id">@modelo.Nombre</option>
+    }
+</select>
+
+// Vista parcial para las impresoras
+@model IEnumerable<Impresora>
+
+<select id="impresora">
+    <option>Selecciona una impresora</option>
+    @foreach (var impresora in Model)
+    {
+        <option value="@impresora.Id">@impresora.Nombre</option>
+    }
+</select>

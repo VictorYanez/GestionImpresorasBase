@@ -1,0 +1,69 @@
+﻿@using GestionImpresoras.Models;
+@model Impresora
+@{
+    ViewData["Title"] = "Borrar Impresora";
+}
+<h1>Borrar Impresora</h1>
+<h3>¿Estás seguro de que deseas borrar esta Impresora?</h3>
+<h1>Borrar: @Model.CodigoActivoFijo</h1>
+
+<hr />
+<form asp-controller="Impresoras" asp-action="Borrar">
+    <!-- Definir el id que se envía desde la vista al controlador -->
+    <input type="hidden" asp-for="Id" value="@Model.Id" class="Impresora" />
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <!--   Definición de campos para la entidad impresora   -->
+    <div class="mb-3 form-group">
+        <label asp-for="CodigoActivoFijo " class="form-label">Codigo Activo Fijo</label>
+        <input type="text" asp-for="CodigoActivoFijo" class="form-control" readonly/>
+        <span asp-validation-for="CodigoActivoFijo" class="text-danger"></span>
+    </div>
+    <!--- Para Nombre de Marca   -->
+    <div class="mb-3 form-group">
+        <label asp-for="Marca.Nombre" class="form-label">Marca</label>
+        <input type="text" asp-for="Marca.Nombre" class="form-control" readonly />
+        <span asp-validation-for="Marca.Nombre" class="text-danger"></span>  
+    </div>
+        <!--- Para Lista de Modelo   -->
+    <div class="mb-3 form-group">
+        <label asp-for="Modelo.Nombre" class="form-label">Modelo</label>
+        <input type="text" asp-for="Modelo.Nombre" class="form-control" readonly />
+        <span asp-validation-for="Modelo.Nombre" class="text-danger"></span>  
+    </div>
+    <!--- Para Nombre de Area   -->
+    <div class="mb-3 form-group">
+        <label asp-for="Area.Nombre" class="form-label">Area</label>
+        <input type="text" asp-for="Area.Nombre" class="form-control" readonly />
+        <span asp-validation-for="Area.Nombre" class="text-danger"></span>  
+    </div>
+        <!--- Para Lista de Unidad   -->
+    <div class="mb-3 form-group">
+        <label asp-for="Unidad.Nombre" class="form-label">Unidad</label>
+        <input type="text" asp-for="Unidad.Nombre" class="form-control" readonly />
+        <span asp-validation-for="Unidad.Nombre" class="text-danger"></span>  
+    </div>
+    <!--- Para Lista de Estados   -->
+    <div class="mb-3 form-group">
+        <label asp-for="Estado.Nombre" class="form-label">Estado</label>
+        <input type="text" asp-for="Estado.Nombre" class="form-control" readonly />
+        <span asp-validation-for="Estado.Nombre" class="text-danger"></span> 
+    </div>
+    <div class="mb-3 form-group">
+        <label asp-for="Institucion.Nombre" class="form-label">Institución</label>
+        <input type="text" asp-for="Institucion.Nombre" class="form-control" readonly />
+        <span asp-validation-for="Institucion.Nombre" class="text-danger"></span> 
+    </div>
+    <div class="mb-3 form-group">
+        <label asp-for="DireccionIP" class="form-label">Direccion IP</label>
+        <input type="text" asp-for="DireccionIP" class="form-control" readonly />
+        <span asp-validation-for="DireccionIP" class="text-danger"></span>
+    </div>
+    <div class="mb-3 form-group">
+        <label asp-for="Caracteristicas" class="form-label">Caracteristicas</label>
+        <input type="text" asp-for="Caracteristicas" class="form-control" readonly />
+        <span asp-validation-for="Caracteristicas" class="text-danger"></span>
+    </div>
+    <!-- Definición de botones para acción Borrar  -->
+     <button type="submit" class="btn btn-primary "><i class="bi bi-eraser"></i> Enviar</button>
+    <a class="btn btn-secondary" asp-action="Index"><i class="bi bi-backspace"></i> Cancelar</a>
+</form>

@@ -1,0 +1,29 @@
+﻿ @using GestionImpresoras.Models;
+@model Institucion
+@{
+    ViewData["Title"] = "Detalle de Institución";
+}
+<h1>Detalles de la Institución consultada</h1>
+<hr />
+<form asp-controller="Instituciones" asp-action="Details">
+
+    <!-- Definir el id que se envía desde la vista al controlador -->
+    <input type="hidden" asp-for="Id" value="@Model.Id" class="Institucion" />
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+   
+   <div class="mb-3">
+        <label asp-for="Nombre" class="form-label">Nombre</label>
+        <input type="text" asp-for="Nombre" class="form-control" readonly />
+        <!-- Utilizo la opción readonly para no permitir cambiar el contenido de los campos -->
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Descripcion" class="form-label">Descripcion</label>
+        <input type="text" asp-for="Descripcion" class="form-control" readonly />
+        <span asp-validation-for="Descripcion" class="text-danger"></span>
+    </div>
+
+    <a class="btn btn-secondary" asp-action="Index"><i class="bi bi-backspace"></i> Regresar</a>
+
+</form>

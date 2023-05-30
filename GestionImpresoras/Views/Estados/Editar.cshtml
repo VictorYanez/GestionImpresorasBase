@@ -1,0 +1,26 @@
+﻿@using GestionImpresoras.Models
+@model Estado
+@{
+    ViewData["Title"] = "Editar Estados Impresoras";
+}
+<h1>Editar Estados</h1>
+<h3>@Model.Nombre</h3>
+<hr />
+ <form asp-action="Editar" asp-controller="Estados" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="mb-3">
+        <label asp-for="Nombre" class="form-label">Nombre</label>
+        <input type="text" asp-for="Nombre" class="form-control" placeholder="Ingresa el nombre de Estado" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Descripcion" class="form-label">Descripcion</label>
+        <input type="text" asp-for="Descripcion" class="form-control" placeholder="Ingresa la descripción del Estado" />
+        <span asp-validation-for="Descripcion" class="text-danger"></span>
+    </div>
+    
+    <button type="submit" class="btn btn-primary"><i class="bi bi-pencil-fill"></i>Enviar</button>
+    @*  Para centrar bottones  --->  d-block mx-auto  *@
+    <a class="btn btn-secondary" asp-action="Index">Cancelar</a>
+</form>
